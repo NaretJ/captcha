@@ -1,0 +1,22 @@
+{
+  "name": "captcha",
+  "version": "1.0.0",
+  "description": "This is the bootstrapping TDD in Javascript for BUU class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NarezTwentyFour/captcha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NarezTwentyFour/captcha/issues"
+  },
+  "homepage": "https://github.com/NarezTwentyFour/captcha#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.2"
+  }
+}

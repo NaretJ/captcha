@@ -58,6 +58,9 @@ describe('Captcha App',() => {
     it('should return "ZERO + 6" when input is 2,1,0,6',() =>{
       expect(createApp(pattern,1,0,6).generate()).toEqual('ZERO + 6')
     })
+    it('should return "EIGHT - 2" when input is 2,2,8,2',() =>{
+      expect(createApp(pattern,2,8,2).generate()).toEqual('EIGHT - 2')
+    })
   })
 })
 function createApp(pattern ,opearator , leftOperand ,RightOperand){

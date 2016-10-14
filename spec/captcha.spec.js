@@ -49,6 +49,9 @@ describe('Captcha App',() => {
     it('should return "FOUR - 1" when input is 2,2,4,1',() =>{
       expect(createApp(pattern,2,4,1).generate()).toEqual('FOUR - 1')
     })
+    it('should return "NINE - 0" when input is 2,2,9,0',() =>{
+      expect(createApp(pattern,2,9,0).generate()).toEqual('NINE - 0')
+    })
   })
 })
 function createApp(pattern ,opearator , leftOperand ,RightOperand){

@@ -28,6 +28,9 @@ describe('Captcha App',() => {
     it('should return "2 + FIVE" when input is 1,1,2,5',() =>{
       expect(createApp(pattern,1,2,5).generate()).toEqual('2 + FIVE')
     })
+    it('should return "3 - SIX" when input is 1,2,3,6',() =>{
+      expect(createApp(pattern,2,3,6).generate()).toEqual('3 - SIX')
+    })
 	})
   /*describe('Pattern 2',() => {
     const pattern = 2

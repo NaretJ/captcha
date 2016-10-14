@@ -64,6 +64,9 @@ describe('Captcha App',() => {
     it('should return "SEVEN - 4" when input is 2,2,7,4',() =>{
       expect(createApp(pattern,2,7,4).generate()).toEqual('SEVEN - 4')
     })
+    it('should return "SIX + 3" when input is 2,1,6,3',() =>{
+      expect(createApp(pattern,1,6,3).generate()).toEqual('SIX + 3')
+    })
   })
 })
 function createApp(pattern ,opearator , leftOperand ,RightOperand){

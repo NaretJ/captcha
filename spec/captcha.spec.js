@@ -52,6 +52,9 @@ describe('Captcha App',() => {
     it('should return "NINE - 0" when input is 2,2,9,0',() =>{
       expect(createApp(pattern,2,9,0).generate()).toEqual('NINE - 0')
     })
+    it('should return "ONE - 8" when input is 2,2,1,8',() =>{
+      expect(createApp(pattern,2,1,8).generate()).toEqual('ONE - 8')
+    })
   })
 })
 function createApp(pattern ,opearator , leftOperand ,RightOperand){

@@ -32,9 +32,12 @@ describe('Captcha App',() => {
       expect(createApp(pattern,2,3,6).generate()).toEqual('3 - SIX')
     })
 	})
-  /*describe('Pattern 2',() => {
+  describe('Pattern 2',() => {
     const pattern = 2
-  })*/
+    it('should return "THREE + 7" when input is 2,1,3,7',() =>{
+      expect(createApp(pattern,1,3,7).generate()).toEqual('THREE + 7')
+    })
+  })
 })
 function createApp(pattern ,opearator , leftOperand ,RightOperand){
 	return new Captcha(pattern , opearator , leftOperand ,RightOperand)

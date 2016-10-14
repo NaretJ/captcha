@@ -70,6 +70,9 @@ describe('Captcha App',() => {
     it('should return "FIVE + 5" when input is 2,1,5,5',() =>{
       expect(createApp(pattern,1,5,5).generate()).toEqual('FIVE + 5')
     })
+    it('should return "TWO - 9" when input is 2,2,2,9',() =>{
+      expect(createApp(pattern,2,2,9).generate()).toEqual('TWO - 9')
+    })
   })
 })
 function createApp(pattern ,opearator , leftOperand ,RightOperand){

@@ -40,6 +40,10 @@ describe('Captcha App',() => {
     it('should return "0 - EIGHT" when input is 1,2,0,8',() =>{
       expect(createApp(pattern,2,0,8).generate()).toEqual('0 - EIGHT')
     })
+    it('should return "4 + THREE" when input is 1,1,4,3',() =>{
+      expect(createApp(pattern,1,4,3).generate()).toEqual('4 + THREE')
+    })
+    
 	})
   describe('Pattern 2',() => {
     const pattern = 2

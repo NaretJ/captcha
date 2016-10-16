@@ -1,3 +1,4 @@
+var valuetostring = ['ZERO','ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT','NINE'];
 function Captcha(pattern , opearator , leftoperand ,rightoperand){
 
   this.generate = () =>{
@@ -14,11 +15,9 @@ function Operator(opearator){
   return opearatortostring[opearator-1];
 }
 function Leftoperand(leftoperand){
-  let valuetostring = ['ZERO','ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT','NINE'];
   return valuetostring[leftoperand];
 }
 function Rightoperand(rightoperand){
-  let valuetostring = ['ZERO','ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT','NINE'];
   return valuetostring[rightoperand];
 }
 

@@ -117,6 +117,36 @@ describe('Captcha App',() => {
     it('should return "TWO - 9" when input is 2,2,2,9',() =>{
       expect(createApp(pattern,2,2,9).generate()).toEqual('TWO - 9')
     })
+    it('should return "ONE + 1" when input is 2,1,1,1',() =>{
+      expect(createApp(pattern,1,1,1).generate()).toEqual('ONE + 1')
+    })
+    it('should return "TWO + 2" when input is 2,1,2,2',() =>{
+      expect(createApp(pattern,1,2,2).generate()).toEqual('TWO + 2')
+    })
+    it('shoud return "THREE + 3" when input is 2,1,3,3',() =>{
+      expect(createApp(pattern,1,3,3).generate()).toEqual('THREE + 3')
+    })
+    it('shoud return "FOUR + 4" when input is 2,1,4,4',() =>{
+      expect(createApp(pattern,1,4,4).generate()).toEqual('FOUR + 4')
+    })
+    it('shoud return "FIVE + 5" when input is 2,1,5,5',() =>{
+      expect(createApp(pattern,1,5,5).generate()).toEqual('FIVE + 5')
+    })
+    it('shoud return "SIX - 6" when input is 2,2,6,6',() =>{
+      expect(createApp(pattern,2,6,6).generate()).toEqual('SIX - 6')
+    })
+    it('shoud return "SEVEN - 7" when input is 2,2,7,7',() =>{
+      expect(createApp(pattern,2,7,7).generate()).toEqual('SEVEN - 7')
+    })
+    it('shoud return "EIGHT - 8" when input is 2,2,8,8',() =>{
+      expect(createApp(pattern,2,8,8).generate()).toEqual('EIGHT - 8')
+    })
+    it('shoud return "NINE - 9" when input is 2,2,9,9',() =>{
+      expect(createApp(pattern,2,9,9).generate()).toEqual('NINE - 9')
+    })
+    it('shoud return "ZERO - 0" when input is 2,2,0,0',() =>{
+      expect(createApp(pattern,2,0,0).generate()).toEqual('ZERO - 0')
+    })
   })
 })
 function createApp(pattern ,opearator , leftOperand ,RightOperand){

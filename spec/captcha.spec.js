@@ -69,6 +69,21 @@ describe('Captcha App',() => {
     it('shoud return "5 + FIVE" when input is 1,1,5,5',() =>{
       expect(createApp(pattern,1,5,5).generate()).toEqual('5 + FIVE')
     })
+    it('shoud return "6 - SIX" when input is 1,2,6,6',() =>{
+      expect(createApp(pattern,2,6,6).generate()).toEqual('6 - SIX')
+    })
+    it('shoud return "7 - SEVEN" when input is 1,2,7,7',() =>{
+      expect(createApp(pattern,2,7,7).generate()).toEqual('7 - SEVEN')
+    })
+    it('shoud return "8 - EIGHT" when input is 1,2,8,8',() =>{
+      expect(createApp(pattern,2,8,8).generate()).toEqual('8 - EIGHT')
+    })
+    it('shoud return "9 - NINE" when input is 1,2,9,9',() =>{
+      expect(createApp(pattern,2,9,9).generate()).toEqual('9 - NINE')
+    })
+    it('shoud return "0 - ZERO" when input is 1,2,0,0',() =>{
+      expect(createApp(pattern,2,0,0).generate()).toEqual('0 - ZERO')
+    })
 	})
   describe('Pattern 2',() => {
     const pattern = 2

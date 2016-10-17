@@ -54,6 +54,9 @@ describe('Captcha App',() => {
     it('should return "1 - FOUR" when input is 1,2,1,4',() =>{
       expect(createApp(pattern,2,1,4).generate()).toEqual('1 - FOUR')
     })
+    it('should return "1 + ONE" when input is 1,1,1,1',() =>{
+      expect(createApp(pattern,1,1,1).generate()).toEqual('1 + ONE')
+    })
 	})
   describe('Pattern 2',() => {
     const pattern = 2
